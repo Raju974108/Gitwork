@@ -1,1 +1,1 @@
-I am just checking my first git commands
+I am just checking my first git commands ok
