@@ -1,0 +1,141 @@
+Microsoft Windows [Version 10.0.19043.2364]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\62625>git version
+git version 2.35.1.windows.2
+
+C:\Users\62625>C:\Users\62625\Documents\Gitwork
+'C:\Users\62625\Documents\Gitwork' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\62625>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+C:\Users\62625>git-help
+'git-help' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\62625>cd Gitwork
+The system cannot find the path specified.
+
+C:\Users\62625>cd Documents
+
+C:\Users\62625\Documents>cd Gitwork
+
+C:\Users\62625\Documents\Gitwork>git init
+Initialized empty Git repository in C:/Users/62625/Documents/Gitwork/.git/
+
+C:\Users\62625\Documents\Gitwork>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Testing.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\62625\Documents\Gitwork>git add Testing.txt
+
+C:\Users\62625\Documents\Gitwork>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Testing.txt
+
+
+C:\Users\62625\Documents\Gitwork>git commit -m " first commit"
+[master (root-commit) 1c79a1c]  first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Testing.txt
+
+C:\Users\62625\Documents\Gitwork>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Testing.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Test1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\62625\Documents\Gitwork>git add *
+
+C:\Users\62625\Documents\Gitwork>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Test1.txt
+        modified:   Testing.txt
+
+
+C:\Users\62625\Documents\Gitwork>git commit -m "second commit"
+[master 8a07e77] second commit
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 Test1.txt
+
+C:\Users\62625\Documents\Gitwork>git log
+commit 8a07e77cd56695ab10b43f0dbcb57942cd61c1ce (HEAD -> master)
+Author: Raju9741 <Basavarajjp93@gmail.com>
+Date:   Wed Jul 10 13:22:36 2024 +0530
+
+    second commit
+
+commit 1c79a1c2e5605129a4bc8c2cd93dd455101c98b4
+Author: Raju9741 <Basavarajjp93@gmail.com>
+Date:   Wed Jul 10 13:17:35 2024 +0530
+
+     first commit
+
+C:\Users\62625\Documents\Gitwork>
